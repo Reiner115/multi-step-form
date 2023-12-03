@@ -1,0 +1,126 @@
+
+
+$Marine-blue: hsl(213, 96%, 18%);
+$Purplish-blue: hsl(243, 100%, 62%);
+$Pastel-blue: hsl(228, 100%, 84%);
+$Light-blue: hsl(206, 94%, 87%);
+$Strawberry-red: hsl(354, 84%, 57%);
+
+$Cool-gray: hsl(231, 11%, 63%);
+$Light-gray: hsl(229, 24%, 87%);
+$Magnolia: hsl(217, 100%, 97%);
+$Alabaster: hsl(231, 100%, 99%);
+$White: hsl(0, 0%, 100%);
+
+*,::after,::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color:#EEF5FF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    height: 100vh;
+    font-family: Ubuntu-Regular;
+    
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-sa{
+    justify-content: space-around;
+}
+.jc-se{
+    justify-content:space-evenly;
+}
+
+.ai-start{
+   align-items: flex-start; 
+}
+.ai-center{
+    align-items: center; 
+ }
+ .ai-end{
+    align-items: flex-end; 
+ }
+
+.mt-4{
+    margin-top:4rem;
+ }
+ .mt-2{
+    margin-top: 32px;
+ }
+ .mt-1{
+    margin-top: 16px;
+ }
+ .gap-8{
+     gap: 8px;
+ }
+ .gap-12{
+     gap: 12px;
+ }
+ .gap-16{
+     gap: 1rem;
+ }
+
+.p-8{
+    padding: 8px;
+}
+.p-16{
+    padding: 16px;
+}
+ 
+.pointer{
+    cursor: pointer;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.dark-blue{
+    color : $Marine-blue;
+}
+
+.blue{
+    color : $Purplish-blue;
+}
+.light-blue{
+    color:$Light-blue;
+}
+.gray{
+    color: $Cool-gray;
+}
+
+
+.subtitle{
+    font-size: 12px;
+}
+.title{
+    font-size: 14px;
+}
+

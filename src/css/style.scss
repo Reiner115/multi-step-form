@@ -1,0 +1,583 @@
+@import "./global.scss";
+
+
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: local("../fonts/Ubuntu-Regular.ttf"),
+    url('../fonts/Ubuntu-Regular.ttf') format('ttf')
+
+}
+
+body{
+    display: block;
+    background-color:$Magnolia
+}
+
+#root{
+    width: 100% !important;
+    height: auto;
+    background-color:$Magnolia
+}
+.container{
+    top: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color:$Magnolia
+}
+
+
+.form-main-container{
+    top: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    background-color:$Magnolia;
+    
+}
+.steps-container{
+    width:100%;
+    height: 200px;
+    background: url(../images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.steps-items-container{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+    
+}
+
+.form-container{
+    background-color: white;
+    width: 80%;
+    height: 400px;
+    margin-top: -80px;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-container{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.step{
+    display: flex;
+    gap: 16px;
+}
+
+.step-number{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    color: white;
+}
+
+.form-step-number-selected{
+    background-color: hsl(206, 94%, 87%);
+    color:black;
+}
+
+
+.step-title-and-subtitle-container{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    gap: 4px;
+}
+.step-title{
+    font-size: .7rem;
+    color:hsla(0, 0%, 100%, 0.5);
+}
+.step-subtitle{
+    font-size: .8rem;
+    color : white;
+    font-weight: bold;
+}
+
+
+.header-subtitle-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.header{
+    font-size: 1.5rem;
+    color: $Marine-blue;
+    font-weight: 800;
+}
+
+.subtitle{
+    color: $Cool-gray;
+    font-size: .8rem;
+}
+
+footer{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.next-button-container-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    display: none;
+}
+.next-button-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+
+}
+
+.back-button{
+    font-size: .8rem;
+    font-weight: bold;
+    color:$Cool-gray;
+    cursor: pointer;
+}
+
+.next-button{
+    background-color:$Marine-blue;
+    color:white;
+    border-radius: 8px;
+    width: 100px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    //font-weight: bold;
+    cursor: pointer;
+}
+.next-button:hover{
+    background-color: $Purplish-blue;
+    background-color: #174A8B;
+}
+
+
+
+
+.title{
+    color : $Marine-blue;
+    font-size: 14px;
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.form-input{
+    border: 1px solid $Light-gray;
+    background-color: transparent;
+    border-radius: 8px;
+    height: 36px;
+    width: -webkit-fill-available;
+    padding-left: 1rem;
+    color:$Marine-blue;
+    font-weight: 700;
+    outline: none;
+}
+
+
+.form-input:focus{
+    border:1px solid $Purplish-blue;
+}
+
+.form-input-required  {
+    border : 1px solid $Strawberry-red;
+}
+
+
+.required{
+    color:$Strawberry-red;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
+
+/*
+--------------------- plan ------------------
+*/
+
+
+.plans-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-container{
+    display: flex;
+    //flex-direction: column;
+
+    //justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid $Light-gray;
+    padding: 12px;   
+    width: 80%;
+    height: 70px;
+    border-radius: 8px; 
+    cursor: pointer;
+}
+.card-container:hover , .card-selected{
+    border: 1px solid $Purplish-blue;
+}
+.card-icon-container{
+
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.toggle-container{
+    color:$Cool-gray;
+    font-size: .8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.toggle-input{
+
+}
+.toggle-selected{
+    color: $Marine-blue;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.toggle{
+    background-color: $Marine-blue;
+    width: 40px;
+    height: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+.toggle-reversed{
+    justify-content : flex-end;   
+}
+.toggle-ball{
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/*
+--------------------- plan ------------------
+*/
+
+
+
+
+
+
+
+/*
+--------------------- addons ------------------
+*/
+
+.addon-container{
+    width: inherit;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border : 1px solid $Light-gray ;
+    
+}
+.addon-title{
+    color : $Marine-blue;
+    font-size: 14px;
+    font-weight: 600;
+}
+.addon-selected{
+    border: 1px solid $Purplish-blue;
+    background-color: $Alabaster;
+}
+.addon-price{
+    color :$Purplish-blue;
+    font-size: 12px;
+}
+
+/*
+--------------------- addons ------------------
+*/
+
+
+
+
+
+
+/*
+---------------------- finish --------------------------
+*/
+
+.finish-container{
+    margin-top: 32px;
+}
+
+.prices{
+    background-color: $Magnolia;
+    border-radius: 8px;
+    padding: 16px;
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.change-selected-plan{
+    text-decoration: underline;
+    color: $Cool-gray;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.prices-seperator{
+    width: inherit;
+    border: 1px solid $Light-gray;
+    height: .5  px;
+}
+.total-title{
+    font-size: .8rem;
+    font-weight: bold;
+    color:$Cool-gray;
+}
+.total-price{
+    color:$Purplish-blue;
+}
+
+
+/*
+---------------------- finish --------------------------
+*/
+
+
+
+.thank-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: inherit;
+    gap: 16px;
+    
+}
+
+
+@media only screen and (min-width: 700px)
+{ 
+
+    #root{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:$Magnolia;
+        
+    } 
+
+    .form-main-container{
+        
+        width: 600px;
+        display: flex;
+        background-color: white;
+        box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.1);
+        height: 430px;
+        padding: 2px;
+        border-radius: 8px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .steps-container{
+        background: none;
+        background-color: $Cool-gray;
+        height: 400px;
+        width: 30%;
+        background: url("../images/bg-sidebar-desktop.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 8px;
+
+    }
+
+
+    .steps-items-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap : 16px;
+    }
+
+    .form-container{
+        margin: 0px;
+        width: 65%;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        box-shadow: none;
+    }
+
+    .step-title-and-subtitle-container{
+        display: flex;
+    }
+
+    footer{
+        display: none;
+       
+    }
+
+
+    .next-button-container-desktop{
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
+    /**---------------------------- PLANS ----------------- */
+    .plans-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        border: 1px solid $Light-gray;
+        padding: 12px;   
+        width: 100px;
+        height: 120px;
+        border-radius: 8px; 
+        cursor: pointer;
+    }
+    .card-container:hover , .card-selected{
+        border: 1px solid $Purplish-blue;
+    }
+
+    /**---------------------------- PLANS ----------------- */
+    
+}
+
+
+
+
+@media only screen and (min-width: 900px)
+{ 
+    .form-main-container{
+        width: 700px;
+        display: flex;
+        background-color: white;
+        box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.1);
+        height: 430px;
+        padding: 12px;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .steps-container{
+        width: 200px;        
+    }
+
+    .form-container{
+        width: 500px;
+    }
+    .plans-container{
+       gap : 32px;
+    }    
+
+}
